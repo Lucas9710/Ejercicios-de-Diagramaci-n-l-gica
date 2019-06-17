@@ -1,0 +1,36 @@
+using System;
+
+namespace ejercicio30
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            int numeroA = 0, numeroB = 0, resultado = 0;
+
+            Console.WriteLine("ingrese el primer numero");
+            numeroA = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("ingresar el segundo numero");
+            numeroB = int.Parse(Console.ReadLine());
+
+            if (numeroA != 0 && numeroB != 0)
+            {
+             for (int i = 0; i < numeroB; i++)
+                {
+                    resultado = numeroA + resultado;
+                }
+            }else
+            {
+                numeroA = 0;
+            }
+
+            Console.WriteLine("el resultado de la multiplicacion es: " + resultado);
+
+            Console.ReadKey(true);
+        
+        }
+
+        
+    }
+}
