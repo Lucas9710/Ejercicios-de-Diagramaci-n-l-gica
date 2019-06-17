@@ -1,0 +1,36 @@
+using System;
+
+namespace ejercicio31
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            int divisor = 0, dividendo = 0, resultado = 0;
+
+            Console.WriteLine("Ingresar el dividendo");
+            dividendo = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Ingresar el divisor");
+            divisor = int.Parse(Console.ReadLine());
+
+
+            if(divisor != 0){
+
+                while(dividendo >= divisor)
+                {
+                    dividendo = dividendo - divisor;
+                    resultado += 1;
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("No se puede ingresar un 0 como divisor");
+            }
+
+            Console.WriteLine("el resultado de la division es: " + resultado);
+            Console.ReadKey(true);
+         }
+    }
+}
