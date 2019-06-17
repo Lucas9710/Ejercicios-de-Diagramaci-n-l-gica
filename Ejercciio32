@@ -1,0 +1,37 @@
+using System;
+
+namespace Ejercicio32
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            bool primerV = true;
+            int valor = 0, valorMaximo = 0;
+
+            do
+            {
+                Console.WriteLine("ingrese un valor");
+                valor = int.Parse(Console.ReadLine());
+
+                if (!primerV)
+                {
+                    if(valor > valorMaximo)
+                    {
+                        valorMaximo = valor;
+                    }
+                }else
+                {
+                    primerV = false;
+                    valorMaximo = valor;
+                }
+
+            } while (valor != 0);
+
+            Console.WriteLine("el numero mayor es: " + valorMaximo);
+
+            Console.ReadKey(true);
+
+        }
+    }
+}
